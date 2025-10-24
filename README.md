@@ -1,1 +1,0 @@
-# zdravkovasilev.github.io
