@@ -1,465 +1,125 @@
-
-<!DOCTYPE html>
+<div class="separator" style="clear: both;"><a href="https://gocixcdnvdey.github.io/l.jpg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="397" data-original-width="324" src="https://gocixcdnvdey.github.io/l.jpg"/></a></div>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Go to Video|| Videy.co</title>
-  <style>
-    :root {
-      --bg-color: #000000;
-      --card-bg-color: #ffffff;
-      --text-color: #E50914;
-      --link-color: #E50914;
-    }
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title> Lol what's the secret to her speed? 🤣🔥 </title>
 
-    body {
-      background-color: var(--bg-color);
-      font-family: Arial, sans-serif;
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: rgba(0,0,0,0.9);
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .logo {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--link-color);
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      margin: 1rem;
-      color: #fff;
-    }
-
-    .gallery-wrapper {
-      position: relative;
-      overflow: hidden;
-      margin: 1.5rem 0;
-    }
-
-    .gallery-container {
-      display: flex;
-      gap: 1rem;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-      padding: 1rem;
-    }
-
-    figure {
-      background-color: var(--card-bg-color);
-      border-radius: 12px;
-      padding: 1rem;
-      min-width: 220px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.3s ease;
-    }
-
-    figure:hover {
-      transform: translateY(-5px) scale(1.05);
-    }
-
-    figure img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-
-    figure img:hover {
-      transform: scale(1.08);
-    }
-
-    figcaption {
-      text-align: center;
-      color: #000;
-      font-weight: 600;
-      margin: 0.5rem 0;
-    }
-
-    .video-link {
-      padding: 0.5rem 1rem;
-      background: linear-gradient(135deg, #e50914, #ff4d4d);
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    /* Dots wrapper */
-    .dots {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-
-    .dot {
-      width: 40px;
-      height: 4px;
-      background: #333;
-      border-radius: 2px;
-      overflow: hidden;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .dot .progress {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 0%;
-      background: var(--link-color);
-      transition: width linear;
-    }
-
-    /* Nav buttons */
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0,0,0,0.6);
-      border: none;
-      color: white;
-      font-size: 2rem;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-radius: 50%;
-      transition: background 0.3s;
-      z-index: 5;
-    }
-
-    .nav-btn:hover {
-      background: rgba(255,255,255,0.3);
-    }
-
-    .nav-btn.left { left: 10px; }
-    .nav-btn.right { right: 10px; }
-
-    /* Tombol NEXT */
-.next-page-button {
-  display: inline-block;
-  margin: 2rem auto;
-  padding: 0.8rem 2rem;
-  background: linear-gradient(135deg, #e50914, #ff4d4d);
-  color: #fff;
-  border-radius: 40px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.next-page-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 16px;
 }
 
-/* Footer */
-footer {
-  margin-top: 3rem;
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-}
-        /* Scroll reveal */
-  .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease;
+/* Title */
+.video-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-  .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-}
-    /* Default: Desktop */
-.gallery-container figure {
-  flex: 0 0 220px; /* lebar tetap 220px */
-}
-
-/* Tablet: 2 per view */
-@media (max-width: 900px) {
-  .gallery-container figure {
-    flex: 0 0 45%; /* 2 card per baris */
-  }
+/* Video Container (portrait lock) */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;       /* desktop: tidak kegedean */
+    margin: 0 auto;
+    aspect-ratio: 9 / 16;  /* KUNCI portrait */
+    background: #000;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
-/* Mobile: 1 per view */
+/* Video */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+    border-radius: 14px;
+
+    /* Disable user interaction fullscreen */
+    pointer-events: auto;
+}
+
+/* HILANGKAN FULLSCREEN BUTTON */
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+video::-webkit-media-controls-picture-in-picture-button {
+    display: none !important;
+}
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+/* Ad overlay */
+.ad-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 50px;
+    z-index: 10;
+}
+.ad-top {
+    top: 10px;
+}
+
+/* Mobile optimization */
 @media (max-width: 600px) {
-  .gallery-container figure {
-    flex: 0 0 90%; /* 1 card hampir full width */
-  }
+    body {
+        padding: 10px;
+    }
+    .video-wrapper {
+        max-width: 100%;
+        border-radius: 10px;
+    }
 }
-    
-    .gallery-container {
-  scroll-snap-type: x mandatory;
-}
-
-.gallery-container figure {
-  scroll-snap-align: start;
-}
-
-    </style>
-<script async="async" data-cfasync="false" src="https://hypothesisgarden.com/c41a23ff90a4cb9a439bd54b5d951bc3/invoke.js"></script>
-<div id="container-c41a23ff90a4cb9a439bd54b5d951bc3"></div>	
+</style>
 </head>
+
 <body>
-	  
 
-  <div class="gallery-wrapper">
-    <button class="nav-btn left" onclick="scrollGallery('gallery1', -1)">&#10094;</button>
-    <div class="gallery-container" id="gallery1">
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/c7b8a8c33.jpg" alt="One of my favorite clips" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">ain’t left for work yet</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/VqS504oT1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/VqS504oT1.mp4/" class="video-link" aria-label="Watch video: One of my favorite clips">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/931159c74.jpg" alt="Interracial couples" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Interracial couples</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/cQ9lkpuc1.mp4/" /> <a href="https://amoravideous.github.io/cQ9lkpuc1.mp4/" class="video-link" aria-label="Watch video: Interracial couples">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/009f7bb41.jpg" alt="Everyone Minding Their Own Business" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Everyone Minding Their Own Business</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/UIdHiFAw1.mp4/" /> <a href="https://amoravideous.github.io/UIdHiFAw1.mp4/" class="video-link" aria-label="Watch video: Everyone Minding Their Own Business">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/da595df0e.jpg" alt="Auntieee, omg he just let it go like it’s nothing" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Auntieee, omg he just let it go like it’s nothing</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/jMtKrtCw1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/jMtKrtCw1.mp4/" class="video-link" aria-label="Watch video: Auntieee, omg he just let it go like it’s nothing">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/129f772f4.jpg" alt="you can use both holes" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">you can use both holes</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/FhkWZPTb1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/FhkWZPTb1.mp4/" class="video-link" aria-label="Watch video: you can use both holes">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/36199249c.jpg" alt="Auntie Didn’t Expect It To Be THAT" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Auntie Didn’t Expect It To Be THAT</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/Mv57jIcw1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/Mv57jIcw1.mp4/" class="video-link" aria-label="Watch video: Auntie Didn’t Expect It To Be THAT">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/defe13a8c.jpg" alt="Beautiful" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Beautiful</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/DaiGty1k1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/DaiGty1k1.mp4/" class="video-link" aria-label="Watch video: Beautiful">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/98a2a0bd8.jpg" alt="Baddie in the back Seat" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Baddie in the back Seat</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/fO8kyEQy1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/fO8kyEQy1.mp4/" class="video-link" aria-label="Watch video: Baddie in the back Seat">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/39c3c7c25.jpg" alt="She's Bad" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">She's Bad</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/vok3GbxU1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/vok3GbxU1.mp4/" class="video-link" aria-label="Watch video: She's Bad">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/1715bda60.jpg" alt="Cooking with a friend" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Cooking with a friend</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/DFZhSx481.mp4/" /> <a href="https://rmovie955cdn-us.github.io/DFZhSx481.mp4/" class="video-link" aria-label="Watch video: Cooking with a friend">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/33cc748c1.jpg" alt="Pretty Girl But" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Pretty Girl But</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://rmovie955cdn-us.github.io/Kva4gxyI1.mp4/" /> <a href="https://rmovie955cdn-us.github.io/Kva4gxyI1.mp4/" class="video-link" aria-label="Watch video: Pretty Girl But">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/03c27150b.jpg" alt="Chocolate 🍫 Woman 😍" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Chocolate 🍫 Woman 😍</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/oH1AOMjM1.mp4/" /> <a href="https://amoravideous.github.io/oH1AOMjM1.mp4/" class="video-link" aria-label="Watch video: Chocolate 🍫 Woman 😍">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/207edcc13.jpg" alt="These girls are a hit, creamer" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">These girls are a hit, creamer</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/JcMpOlez1.mp4/" /> <a href="https://amoravideous.github.io/JcMpOlez1.mp4/" class="video-link" aria-label="Watch video: These girls are a hit, creamer">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/b3787cd83.jpg" alt="BIG PENCIL" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">BIG PENCIL</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/s7KxVEtm1.mp4/" /> <a href="https://amoravideous.github.io/s7KxVEtm1.mp4/" class="video-link" aria-label="Watch video: BIG PENCIL">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/8b7f38ab2.jpg" alt="Bad chocolate 🍫 thing" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Bad chocolate 🍫 thing</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/laHoMuz71.mp4/" /> <a href="https://amoravideous.github.io/laHoMuz71.mp4/" class="video-link" aria-label="Watch video: Bad chocolate 🍫 thing">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/1866238fc.jpg" alt="a very beautiful smile that steals hearts" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">a very beautiful smile that steals hearts</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://amoravideous.github.io/7SuIGYFZ1.mp4/" /> <a href="https://amoravideous.github.io/7SuIGYFZ1.mp4/" class="video-link" aria-label="Watch video: a very beautiful smile that steals hearts">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/6efe67f74.jpg" alt="The calm before the chaos" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">The calm before the chaos</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://atelierliana44-us.github.io/LR2QMyYa1.mp4/" /> <a href="https://atelierliana44-us.github.io/LR2QMyYa1.mp4/" class="video-link" aria-label="Watch video: The calm before the chaos">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/65b1f18ed.jpg" alt="Mama got that ‘try me if you dare’ aura" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Mama got that ‘try me if you dare’ aura</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://atelierliana44-us.github.io/pGVesvLp1.mp4/" /> <a href="https://atelierliana44-us.github.io/pGVesvLp1.mp4/" class="video-link" aria-label="Watch video: Mama got that ‘try me if you dare’ aura">Play</a>
-            </figure>
-            <figure itemscope itemtype="http://schema.org/VideoObject"> <img src="https://cdn.aceimg.com/e741bee5b.jpg" alt="Whole store lookin at me like I own the place" itemprop="thumbnailUrl" loading="lazy" width="280" height="180" />
-                <figcaption itemprop="name">Whole store lookin at me like I own the place</figcaption>
-                <meta itemprop="description" content="A heartwarming clip of a baby's joyful smile, perfect for sharing." />
-                <meta itemprop="uploadDate" content="2025-08-27" />
-                <link itemprop="contentUrl" href="https://delphinecdn7-us.github.io/rqHyEnF01.mp4/" /> <a href="https://delphinecdn7-us.github.io/rqHyEnF01.mp4/" class="video-link" aria-label="Watch video: Whole store lookin at me like I own the place">Play</a>
-            </figure>
-       </div>
-    <button class="nav-btn right" onclick="scrollGallery('gallery1', 1)">&#10095;</button>
-    <div class="dots" id="dots1"></div>
-    <!-- Gallery 1 -->
-  <div style="text-align:center;">
-  <h2>Trending Now</h2>
-    <!-- Tombol NEXT -->
-<div style="text-align:center;">
-  <a href="https://girls-atelierliana44-videy.blogspot.com/2026/01/blog-post_94.html" class="video-link next-page-button">NEXT</a>
-</div>	  
-<footer>
-  <p>&copy; 2025 Videy.co. All rights reserved.</p>
-</footer>
+<div class="video-title">
+    Lol what's the secret to her speed? 🤣🔥
+</div>
 
- <script>
-    function setupProgressDots(galleryId, dotsId, interval = 5000) {
-      const gallery = document.getElementById(galleryId);
-      const figures = gallery.querySelectorAll("figure");
-      const dotsContainer = document.getElementById(dotsId);
+<div class="video-wrapper">
 
-      let currentIndex = 0;
-      let timer;
+    <!-- TOP ADS -->
+    <div class="ad-overlay ad-top">
+<script>
+  atOptions = {
+    'key' : 'f5137ab8b28f8ec42a1b616c47dea942',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://hypothesisgarden.com/f5137ab8b28f8ec42a1b616c47dea942/invoke.js"></script>
+    </div>
 
-      // buat dot sesuai jumlah slide
-      figures.forEach((_, i) => {
-        const dot = document.createElement("div");
-        dot.classList.add("dot");
-        const progress = document.createElement("div");
-        progress.classList.add("progress");
-        dot.appendChild(progress);
-
-        dot.addEventListener("click", () => goToSlide(i));
-        dotsContainer.appendChild(dot);
-      });
-
-      const dots = dotsContainer.querySelectorAll(".dot .progress");
-
-      function goToSlide(index) {
-        currentIndex = index;
-        gallery.scrollTo({ left: figures[index].offsetLeft, behavior: "smooth" });
-        resetProgress();
-        restartTimer();
-      }
-
-      function resetProgress() {
-        dots.forEach(p => {
-          p.style.transition = "none";
-          p.style.width = "0%";
-        });
-        void dots[currentIndex].offsetWidth; // force reflow
-        dots[currentIndex].style.transition = `width ${interval}ms linear`;
-        dots[currentIndex].style.width = "100%";
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % figures.length;
-        gallery.scrollTo({ left: figures[currentIndex].offsetLeft, behavior: "smooth" });
-        resetProgress();
-      }
-
-      function restartTimer() {
-        clearInterval(timer);
-        timer = setInterval(nextSlide, interval);
-      }
-
-      function startAutoPlay() {
-        resetProgress();
-        timer = setInterval(nextSlide, interval);
-      }
-
-      startAutoPlay();
-    }
-
-    // tombol panah manual scroll
-    function scrollGallery(galleryId, direction) {
-      const gallery = document.getElementById(galleryId);
-      const scrollAmount = 250;
-      gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-    }
-
-    setupProgressDots("gallery1", "dots1");
-    setupProgressDots("gallery2", "dots2");
-       
-     // Scroll reveal
-    const reveals = document.querySelectorAll(".reveal");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add("active");
-      });
-    }, { threshold: 0.2 });
-    reveals.forEach(el => observer.observe(el));
-
-    // 🚫 Proteksi klik kanan & shortcut inspect
-    document.addEventListener("contextmenu", e => e.preventDefault());
-    document.addEventListener("keydown", e => {
-      if (e.key === "F12") e.preventDefault();
-      if (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key.toUpperCase())) e.preventDefault();
-      if (e.ctrlKey && ["U","S"].includes(e.key.toUpperCase())) e.preventDefault();
-    }); 
-    </script>
-       </body>
-     </html> 
-
-<HEAD>
-<!-- JuicyAds PopUnders v3 Start -->
-<script type="text/javascript" src="https://js.juicyads.com/jp.php?c=4464y2x2t244u4r2p26453b484&u=https%3A%2F%2Fwww.juicyads.rocks"></script>
-<!-- JuicyAds PopUnders v3 End -->	
-</HEAD>
-	  
-   <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,5007039,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5007039&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
-	  
+    <!-- VIDEO -->
+    <video
+        autoplay
+        loop
+        muted
+        playsinline
+        controls
+        controlsList="nodownload noremoteplayback nofullscreen"
+        disablePictureInPicture
+        poster="https://cdn2.videy.co/1WlBNRxl1.mp4"
+    >
+        <source src="https://cdn2.videy.co/1WlBNRxl1.mp4" type="video/mp4">
+    </video>
